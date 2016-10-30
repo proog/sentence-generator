@@ -1,0 +1,7 @@
+bin/
+obj/
+project.lock.json
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
