@@ -2,7 +2,7 @@
 using System.IO;
 
 namespace SentenceGenerator {
-    public class Program {
+    class Program {
         public static void Main(string[] args) {
             var input = File.ReadAllText(args[0]);
             var sentences = args.Length > 1 ? int.Parse(args[1]) : 10;

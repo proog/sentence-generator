@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace SentenceGenerator {
-    public class Node {
+    class Node {
         public readonly string Word;
         public readonly Dictionary<Node, int> Edges;
-
-        public bool IsTerminator {
-            get { return Generator.TERMINATORS.Contains(Word); }
-        }
-
-        public bool IsPunctuation {
-            get { return Generator.PUNCTUATION.Contains(Word); }
-        }
+        public bool IsTerminator => Generator.TERMINATORS.Contains(Word);
+        public bool IsPunctuation => Generator.PUNCTUATION.Contains(Word);
 
         public Node(string word) {
             this.Word = word;

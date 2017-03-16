@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 
 namespace SentenceGenerator {
-    public class Generator {
+    class Generator {
         private Dictionary<string, Node> nodes;
         public static readonly string[] PUNCTUATION = { ".", "!", "?", ",", ":", ";" };
         public static readonly string[] TERMINATORS = { ".", "!", "?" };
